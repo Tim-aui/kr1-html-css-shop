@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="css/style.css">
         <script src="js/main.js" defer></script>
     </head>
-    <body>
+    <body id="top">
         <header class="site-header">
             <div class="site-header__inner">
                 <a class="site-header__logo" href="index.html">ShopProject</a>
@@ -22,6 +22,12 @@
                         </li>
                         <li class="site-nav__item">
                             <a class="site-nav__link" href="catalog.html">Каталог</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="product.html">Товар</a>
+                        </li>
+                        <li class="site-nav__item">
+                            <a class="site-nav__link" href="order.html">Заявка</a>
                         </li>
                         <li class="site-nav__item">
                             <a class="site-nav__link" href="contacts.html">Контакты</a>
@@ -70,6 +76,7 @@
 
                 <div class="products-grid">
                     <article class="product-card product-card--featured">
+                        <span class="product-card__badge">Хит</span>
                         <h3 class="product-card__title">Товар 1</h3>
                         <p class="product-card__description">Краткое описание учебного товара.</p>
                         <p class="product-card__price">Цена: 1000 руб.</p>
@@ -79,6 +86,7 @@
                     </article>
 
                     <article class="product-card">
+                        <span class="product-card__badge product-card__badge--new">Новинка</span>
                         <h3 class="product-card__title">Товар 2</h3>
                         <p class="product-card__description">Краткое описание учебного товара.</p>
                         <p class="product-card__price">Цена: 1500 руб.</p>
@@ -87,7 +95,8 @@
                         </button>
                     </article>
 
-                    <article class="product-card">
+                    <article class="product-card product-card--discount">
+                        <span class="product-card__badge product-card__badge--discount">Скидка</span>
                         <h3 class="product-card__title">Товар 3</h3>
                         <p class="product-card__description">Краткое описание учебного товара.</p>
                         <p class="product-card__price">Цена: 2000 руб.</p>
@@ -215,6 +224,8 @@
         <p class="success-message" id="success-message" hidden>
             Форма успешно отправлена!
         </p>
+
+        <a class="scroll-up" href="#top">Наверх</a>
 
     </body>
 </html>
