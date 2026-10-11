@@ -246,6 +246,8 @@ main {
 
 .catalog-filters {
   grid-area: filters;
+  position: sticky;
+  top: var(--space-md);
   align-self: start;
   padding: var(--space-md);
   border: 1px solid var(--color-border);
@@ -304,6 +306,7 @@ main {
   на всю высоту, кнопка прижимается к нижнему краю.
 */
 .product-card {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: var(--space-sm);
@@ -323,6 +326,29 @@ main {
 
 .product-card--discount {
   border-color: var(--color-danger);
+}
+
+/*
+  Бейдж карточки позиционируется абсолютно
+  относительно блока product-card.
+*/
+.product-card__badge {
+  position: absolute;
+  top: var(--space-sm);
+  right: var(--space-sm);
+  padding: 4px 8px;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+}
+
+.product-card__badge--new {
+  background-color: var(--color-success);
+}
+
+.product-card__badge--discount {
+  background-color: var(--color-danger);
 }
 
 .product-card__title {
@@ -347,6 +373,74 @@ main {
 .product-card__button {
   margin-top: auto;
   align-self: flex-start;
+}
+
+/*
+  Фиксированная кнопка «Наверх»;
+  z-index поднимает её над остальным контентом страницы.
+*/
+.scroll-up {
+  position: fixed;
+  right: var(--space-lg);
+  bottom: var(--space-lg);
+  z-index: 50;
+  padding: var(--space-sm) var(--space-md);
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+}
+
+.scroll-up:hover {
+  background-color: var(--color-primary-dark);
+}
+
+/*
+  Двухколоночная раскладка страницы товара.
+*/
+.product-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-lg);
+}
+
+.product-photo__image {
+  display: block;
+  max-width: 100%;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+}
+
+.product-details__price {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/*
+  Таблица характеристик товара.
+*/
+.product-table {
+  width: 100%;
+  max-width: 480px;
+  margin-bottom: var(--space-lg);
+  border-collapse: collapse;
+}
+
+.product-table caption {
+  padding-bottom: var(--space-xs);
+  text-align: left;
+  font-weight: 700;
+}
+
+.product-table th,
+.product-table td {
+  padding: var(--space-sm);
+  border: 1px solid var(--color-border);
+  text-align: left;
+}
+
+.product-table th {
+  background-color: var(--color-surface);
 }
 
 .aside-info {
