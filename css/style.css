@@ -579,3 +579,63 @@ main {
   justify-content: center;
   margin-top: var(--space-sm);
 }
+
+/* ===============================
+   7. Адаптивность
+   =============================== */
+
+@media (max-width: 900px) {
+  .catalog-layout {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "filters"
+      "products";
+  }
+
+  .catalog-filters {
+    position: static;
+  }
+
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .product-table {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: var(--space-md);
+  }
+
+  .site-header__inner,
+  .site-footer {
+    padding: var(--space-md);
+  }
+
+  .hero {
+    padding: var(--space-lg) var(--space-md);
+  }
+
+  .site-nav__list {
+    gap: var(--space-xs);
+  }
+
+  .site-nav__link {
+    padding: var(--space-xs) var(--space-sm);
+  }
+
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .order-dialog {
+    width: min(100% - 16px, 560px);
+  }
+}
