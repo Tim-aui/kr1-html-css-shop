@@ -10,7 +10,7 @@
     <body id="top">
         <header class="site-header">
             <div class="site-header__inner">
-                <a class="site-header__logo" href="index.html">ShopProject</a>
+                <a class="site-header__logo" href="index.html">ПослеМайнинга</a>
                 <nav class="site-nav" aria-label="Основная навигация">
                     <ul class="site-nav__list">
                         <li class="site-nav__item">
@@ -51,9 +51,9 @@
             <section class="section">
                 <h1>Каталог товаров</h1>
                 <p>
-                    На этой странице представлен учебный каталог товаров.
-                    В дальнейшем здесь будут добавлены фильтры, сортировка и более
-                    подробные карточки.
+                    В каталоге представлены видеокарты учебного интернет-магазина.
+                    Слева расположен блок фильтров, справа — карточки товаров с
+                    изображением, описанием и ценой.
                 </p>
             </section>
 
@@ -94,28 +94,89 @@
                     <h2>Список товаров</h2>
 
                     <div class="products-grid">
-                        <article class="product-card">
-                            <span class="product-card__badge product-card__badge--new">Новинка</span>
-                            <h3 class="product-card__title">Товар 1</h3>
-                            <p class="product-card__description">Краткое описание учебного товара.</p>
-                            <p class="product-card__price">Цена: 1000 руб.</p>
-                            <a class="button button--primary" href="product.html">Подробнее</a>
+                        <article class="product-card product-card--featured">
+                            <img class="product-card__image" src="images/Видеокарта ASUS GeForce RTX 5080 ROG Astral OC Edition.webp" alt="Видеокарта ASUS GeForce RTX 5080 ROG Astral OC Edition" loading="lazy">
+                            <span class="product-card__badge">Хит</span>
+                            <h3 class="product-card__title">Видеокарта ASUS GeForce RTX 5080 ROG Astral OC Edition</h3>
+                            <p class="product-card__description">Флагманская видеокарта для игр в 4K.</p>
+                            <p class="product-card__price">Цена: 164 990 руб.</p>
+                            <a class="button button--primary" href="product.html?id=asus-rtx-5080">Подробнее</a>
                         </article>
 
                         <article class="product-card">
-                            <span class="product-card__badge">Хит</span>
-                            <h3 class="product-card__title">Товар 2</h3>
-                            <p class="product-card__description">Краткое описание учебного товара.</p>
-                            <p class="product-card__price">Цена: 1500 руб.</p>
-                            <a class="button button--primary" href="product.html">Подробнее</a>
+                            <img class="product-card__image" src="images/Видеокарта GIGABYTE GeForce RTX 5070 WINDFORCE OC SFF.webp" alt="Видеокарта GIGABYTE GeForce RTX 5070 WINDFORCE OC SFF" loading="lazy">
+                            <span class="product-card__badge product-card__badge--new">Новинка</span>
+                            <h3 class="product-card__title">Видеокарта GIGABYTE GeForce RTX 5070 WINDFORCE OC SFF</h3>
+                            <p class="product-card__description">Видеокарта для уверенного гейминга в 1440p.</p>
+                            <p class="product-card__price">Цена: 68 990 руб.</p>
+                            <a class="button button--primary" href="product.html?id=gigabyte-rtx-5070">Подробнее</a>
+                        </article>
+
+                        <article class="product-card">
+                            <img class="product-card__image" src="images/Видеокарта PowerColor AMD Radeon RX 9060 XT Reaper.webp" alt="Видеокарта PowerColor AMD Radeon RX 9060 XT Reaper" loading="lazy">
+                            <h3 class="product-card__title">Видеокарта PowerColor AMD Radeon RX 9060 XT Reaper</h3>
+                            <p class="product-card__description">Видеокарта на архитектуре RDNA для игр и работы.</p>
+                            <p class="product-card__price">Цена: 44 990 руб.</p>
+                            <a class="button button--primary" href="product.html?id=powercolor-rx-9060-xt">Подробнее</a>
+                        </article>
+
+                        <article class="product-card">
+                            <img class="product-card__image" src="images/Видеокарта KFA2 GeForce RTX 5060 ROCK(X) OC 2FAN RGB White.webp" alt="Видеокарта KFA2 GeForce RTX 5060 ROCK(X) OC 2FAN RGB White" loading="lazy">
+                            <span class="product-card__badge product-card__badge--new">Новинка</span>
+                            <h3 class="product-card__title">Видеокарта KFA2 GeForce RTX 5060 ROCK(X) OC 2FAN RGB White</h3>
+                            <p class="product-card__description">Видеокарта с подсветкой RGB и тихим охлаждением.</p>
+                            <p class="product-card__price">Цена: 37 990 руб.</p>
+                            <a class="button button--primary" href="product.html?id=kfa2-rtx-5060">Подробнее</a>
+                        </article>
+
+                        <article class="product-card">
+                            <img class="product-card__image" src="images/Видеокарта Palit GeForce RTX 5060 Dual.webp" alt="Видеокарта Palit GeForce RTX 5060 Dual" loading="lazy">
+                            <h3 class="product-card__title">Видеокарта Palit GeForce RTX 5060 Dual</h3>
+                            <p class="product-card__description">Видеокарта для игр в Full HD.</p>
+                            <p class="product-card__price">Цена: 35 990 руб.</p>
+                            <a class="button button--primary" href="product.html?id=palit-rtx-5060">Подробнее</a>
+                        </article>
+
+                        <article class="product-card">
+                            <img class="product-card__image" src="images/Видеокарта GIGABYTE GeForce RTX 5050 WINDFORCE OC.webp" alt="Видеокарта GIGABYTE GeForce RTX 5050 WINDFORCE OC" loading="lazy">
+                            <h3 class="product-card__title">Видеокарта GIGABYTE GeForce RTX 5050 WINDFORCE OC</h3>
+                            <p class="product-card__description">Компактная видеокарта для игр в Full HD.</p>
+                            <p class="product-card__price">Цена: 32 990 руб.</p>
+                            <a class="button button--primary" href="product.html?id=gigabyte-rtx-5050">Подробнее</a>
+                        </article>
+
+                        <article class="product-card">
+                            <img class="product-card__image" src="images/Видеокарта MSI GeForce RTX 5050 VENTUS 2X OC.webp" alt="Видеокарта MSI GeForce RTX 5050 VENTUS 2X OC" loading="lazy">
+                            <h3 class="product-card__title">Видеокарта MSI GeForce RTX 5050 VENTUS 2X OC</h3>
+                            <p class="product-card__description">Видеокарта для игр и работы с графикой.</p>
+                            <p class="product-card__price">Цена: 31 990 руб.</p>
+                            <a class="button button--primary" href="product.html?id=msi-rtx-5050">Подробнее</a>
                         </article>
 
                         <article class="product-card product-card--discount">
+                            <img class="product-card__image" src="images/Видеокарта KFA2 GeForce RTX 3050 X Black.webp" alt="Видеокарта KFA2 GeForce RTX 3050 X Black" loading="lazy">
                             <span class="product-card__badge product-card__badge--discount">Скидка</span>
-                            <h3 class="product-card__title">Товар 3</h3>
-                            <p class="product-card__description">Краткое описание учебного товара.</p>
-                            <p class="product-card__price">Цена: 2000 руб.</p>
-                            <a class="button button--primary" href="product.html">Подробнее</a>
+                            <h3 class="product-card__title">Видеокарта KFA2 GeForce RTX 3050 X Black</h3>
+                            <p class="product-card__description">Видеокарта для игр в Full HD и монтажа.</p>
+                            <p class="product-card__price">Цена: 24 990 руб.</p>
+                            <a class="button button--primary" href="product.html?id=kfa2-rtx-3050">Подробнее</a>
+                        </article>
+
+                        <article class="product-card product-card--discount">
+                            <img class="product-card__image" src="images/Видеокарта MSI GeForce GT 1030 AERO ITX OC.webp" alt="Видеокарта MSI GeForce GT 1030 AERO ITX OC" loading="lazy">
+                            <span class="product-card__badge product-card__badge--discount">Скидка</span>
+                            <h3 class="product-card__title">Видеокарта MSI GeForce GT 1030 AERO ITX OC</h3>
+                            <p class="product-card__description">Видеокарта для офисных задач и медиацентра.</p>
+                            <p class="product-card__price">Цена: 8 990 руб.</p>
+                            <a class="button button--primary" href="product.html?id=msi-gt-1030">Подробнее</a>
+                        </article>
+
+                        <article class="product-card">
+                            <img class="product-card__image" src="images/Видеокарта KFA2 GeForce GT 710.webp" alt="Видеокарта KFA2 GeForce GT 710" loading="lazy">
+                            <h3 class="product-card__title">Видеокарта KFA2 GeForce GT 710</h3>
+                            <p class="product-card__description">Видеокарта для сборки офисного ПК.</p>
+                            <p class="product-card__price">Цена: 4 990 руб.</p>
+                            <a class="button button--primary" href="product.html?id=kfa2-gt-710">Подробнее</a>
                         </article>
                     </div>
                 </section>

@@ -6,11 +6,12 @@
         <meta name="description" content="Форма оформления заявки учебного интернет-магазина.">
         <title>Оформление заявки — Учебный интернет-магазин</title>
         <link rel="stylesheet" href="css/style.css">
+        <script src="js/order.js" defer></script>
     </head>
     <body id="top">
         <header class="site-header">
             <div class="site-header__inner">
-                <a class="site-header__logo" href="index.html">ShopProject</a>
+                <a class="site-header__logo" href="index.html">ПослеМайнинга</a>
                 <nav class="site-nav" aria-label="Основная навигация">
                     <ul class="site-nav__list">
                         <li class="site-nav__item">
@@ -54,7 +55,7 @@
                     Заполните форму, чтобы оформить заявку на товар или получить консультацию.
                 </p>
 
-                <form class="order-form" action="#" method="post">
+                <form class="order-form" id="order-form" action="#" method="post">
                     <div class="order-form__field">
                         <label class="order-form__label" for="order-name">Имя</label>
                         <input
@@ -95,6 +96,23 @@
                             required
                         >
                         <small class="order-form__hint">Формат: +7 (900) 000-00-00</small>
+                    </div>
+
+                    <div class="order-form__field">
+                        <label class="order-form__label" for="order-product">Товар</label>
+                        <select class="order-form__select" id="order-product" name="product" required>
+                            <option value="">Выберите товар</option>
+                            <option value="asus-rtx-5080">Видеокарта ASUS GeForce RTX 5080 ROG Astral OC Edition — 164 990 руб.</option>
+                            <option value="gigabyte-rtx-5070">Видеокарта GIGABYTE GeForce RTX 5070 WINDFORCE OC SFF — 68 990 руб.</option>
+                            <option value="powercolor-rx-9060-xt">Видеокарта PowerColor AMD Radeon RX 9060 XT Reaper — 44 990 руб.</option>
+                            <option value="kfa2-rtx-5060">Видеокарта KFA2 GeForce RTX 5060 ROCK(X) OC 2FAN RGB White — 37 990 руб.</option>
+                            <option value="palit-rtx-5060">Видеокарта Palit GeForce RTX 5060 Dual — 35 990 руб.</option>
+                            <option value="gigabyte-rtx-5050">Видеокарта GIGABYTE GeForce RTX 5050 WINDFORCE OC — 32 990 руб.</option>
+                            <option value="msi-rtx-5050">Видеокарта MSI GeForce RTX 5050 VENTUS 2X OC — 31 990 руб.</option>
+                            <option value="kfa2-rtx-3050">Видеокарта KFA2 GeForce RTX 3050 X Black — 24 990 руб.</option>
+                            <option value="msi-gt-1030">Видеокарта MSI GeForce GT 1030 AERO ITX OC — 8 990 руб.</option>
+                            <option value="kfa2-gt-710">Видеокарта KFA2 GeForce GT 710 — 4 990 руб.</option>
+                        </select>
                     </div>
 
                     <div class="order-form__field">

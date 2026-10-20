@@ -32,9 +32,6 @@ closeDialogButton.addEventListener('click', () => {
 // Получаем форму заявки.
 const orderForm = document.getElementById('order-form');
 
-// Получаем сообщение об успешной отправке.
-const successMessage = document.getElementById('success-message');
-
 // Обрабатываем отправку формы.
 orderForm.addEventListener('submit', (event) => {
   // Отменяем стандартную отправку формы,
@@ -63,13 +60,11 @@ orderForm.addEventListener('submit', (event) => {
     return;
   }
 
-  // Показываем сообщение об успешной отправке.
-  successMessage.hidden = false;
+  // Передаём имя на страницу успешной отправки.
+  const name = document.getElementById('order-name').value;
 
-  // Очищаем форму.
-  orderForm.reset();
-
-  // Закрываем модальное окно.
+  // Закрываем модальное окно и переходим на страницу успешной отправки.
   orderDialog.close();
+  window.location.href = 'success.html?name=' + encodeURIComponent(name);
 });
     
