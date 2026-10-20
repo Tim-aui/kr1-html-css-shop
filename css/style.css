@@ -193,9 +193,15 @@ main {
 }
 .hero {
   max-width: var(--container-width);
+  min-height: 100vh;
   margin: 0 auto var(--space-xl);
   padding: var(--space-xl) var(--space-lg);
   background-color: var(--color-surface-accent);
+  background-image:
+    url("../images/Видеокарта ASUS GeForce RTX 5080 ROG Astral OC Edition.webp");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   border-radius: var(--radius-lg);
 }
 
